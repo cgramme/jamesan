@@ -1,0 +1,30 @@
+body {
+	background: #000;
+	background-size: 100% 100%;
+}
+h1 {
+	color: red;
+	font-size: 80px;
+	text-align: center;
+	font-family: "Indie Flower",Sans-serif,Helvetica,Arial,sans-serif;
+	text-shadow: 1px 1px 10px #fff;
+}
+
+div {
+	margin: 0 auto;
+	background: url('hearts.png');	
+	width: 200px;
+	height: 200px;
+	-webkit-animation: shoot-gun 2s steps(18) infinite;
+	animation: shoot-gun 2s steps(18) infinite;
+}
+
+@-webkit-keyframes shoot-gun {
+	from{ background-position: 0 0}
+	to{ background-position: -3600px 0}
+}
+
+@keyframes shoot-gun {
+	from{ background-position: 0 0}
+	to{ background-position: -3600px 0}
+}
